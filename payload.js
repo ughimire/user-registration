@@ -1,1 +1,3 @@
-alert("hello World");
+window.addEventListener('load', (event) => {
+alert('loaded');
+});
