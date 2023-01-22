@@ -255,7 +255,7 @@ if ( ! class_exists( 'UR_Admin_Profile', false ) ) :
 														$value      = date_i18n( $date_format, strtotime( trim( $date_range[0] ) ) ) . ' to ' . date_i18n( $date_format, strtotime( trim( $date_range[1] ) ) );
 													}
 													?>
-									<input type="text" 
+									<input type="text"
 										   value="<?php echo esc_attr( $actual_value ); ?>"
 										   class="ur-flatpickr-field regular-text"
 										   data-id = '<?php echo esc_attr( $key ); ?>'
@@ -290,7 +290,7 @@ if ( ! class_exists( 'UR_Admin_Profile', false ) ) :
 											?>
 											<input type="text" name="<?php echo esc_attr( $key ); ?>"
 												   id="<?php echo esc_attr( $key ); ?>"
-												   value="<?php echo esc_attr( $this->get_user_meta( $user->ID, $key ) ); ?>"
+												   value="<?php echo ( $this->get_user_meta( $user->ID, $key ) ); ?>"
 												   class="<?php echo( ! empty( $field['class'] ) ? esc_attr( $field['class'] ) : 'regular-text' ); ?>"
 												<?php echo esc_attr( $attribute_string ); ?>
 											/>
